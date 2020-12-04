@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Spline Snapping Tool",
+	"Description": "Editor mode that allows to snap selected actors to a spline component",
+	"Category": "Editor",
+	"CreatedBy": "Elhoussine Mehnik",
+	"CreatedByURL": "https://twitter.com/HoussineMehnik",
+	"DocsURL": "https://github.com/mhousse1247",
+	"MarketplaceURL": "http://ue4resources.com/",
+	"SupportURL": "mailto:ue4resources@gmail.com",
+	"EngineVersion": "4.26.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "SplineSnappingTool",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	]
+}

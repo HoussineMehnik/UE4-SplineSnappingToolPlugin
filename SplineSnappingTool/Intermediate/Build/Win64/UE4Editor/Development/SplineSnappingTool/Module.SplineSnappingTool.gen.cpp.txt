@@ -1,0 +1,12 @@
+C:\Plugins\Custom Gravity Project 4.26\Plugins\SplineSnappingTool\Intermediate\Build\Win64\UE4Editor\Development\SplineSnappingTool\Definitions.SplineSnappingTool.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/SplineSnappingTool/Intermediate/Build/Win64/UE4Editor/Inc/SplineSnappingTool/SplineSnappingEditorSettings.gen.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\SplineSnappingTool\Source\SplineSnappingTool/Public/SplineSnappingEditorSettings.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\SplineSnappingTool\Intermediate\Build\Win64\UE4Editor\Inc\SplineSnappingTool\SplineSnappingEditorSettings.generated.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/SplineSnappingTool/Intermediate/Build/Win64/UE4Editor/Inc/SplineSnappingTool/SplineSnappingTool.init.gen.cpp
