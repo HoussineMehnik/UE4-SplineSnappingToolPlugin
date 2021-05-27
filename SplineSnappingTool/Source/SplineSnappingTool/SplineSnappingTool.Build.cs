@@ -41,6 +41,7 @@ public class SplineSnappingTool : ModuleRules
                 "PropertyEditor",
                 "ComponentVisualizers",
                  "EditorStyle",
+				 "EditorFramework",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
