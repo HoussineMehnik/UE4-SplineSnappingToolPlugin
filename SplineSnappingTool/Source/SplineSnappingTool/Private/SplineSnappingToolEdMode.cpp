@@ -362,7 +362,7 @@ bool FSplineSnappingToolEdMode::IsSelectionAllowed(AActor* InActor, bool bInSele
 	return true;
 }
 
-EAxisList::Type FSplineSnappingToolEdMode::GetWidgetAxisToDraw(FWidget::EWidgetMode InWidgetMode) const
+EAxisList::Type FSplineSnappingToolEdMode::GetWidgetAxisToDraw(UE::Widget::EWidgetMode InWidgetMode) const
 {
 	if (bSnapEnabled)
 	{
