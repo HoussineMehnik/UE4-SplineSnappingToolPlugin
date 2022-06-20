@@ -67,7 +67,7 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 																	SNew(STextBlock)
 																	.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
 																	.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.10" ) )
-																	.Text( FEditorFontGlyphs::Magnet)
+																	//.Text( FEditorFontGlyphs::Arrow_Down)
 																]
 															+ SHorizontalBox::Slot()
 															.VAlign(VAlign_Center)
@@ -128,7 +128,13 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 void SSplineSnappingToolWidget::CreateSettingsDetailsView()
 {
 	FPropertyEditorModule& PropertyEditorModule = FModuleManager::LoadModuleChecked<FPropertyEditorModule>("PropertyEditor");
-	FDetailsViewArgs DetailsViewArgs(false, false, false, FDetailsViewArgs::HideNameArea, true);
+	FDetailsViewArgs DetailsViewArgs;
+	DetailsViewArgs.bUpdatesFromSelection = false;
+	DetailsViewArgs.bLockable = false;
+	DetailsViewArgs.bAllowSearch = false;
+	DetailsViewArgs.NameAreaSettings = FDetailsViewArgs::HideNameArea;
+	DetailsViewArgs.bHideSelectionTip = true;
+
 	DetailsPanel = PropertyEditorModule.CreateDetailView(DetailsViewArgs);
 
 	USplineSnappingEditorSettings* SplineSnappingEditorSettings = USplineSnappingEditorSettings::Get();

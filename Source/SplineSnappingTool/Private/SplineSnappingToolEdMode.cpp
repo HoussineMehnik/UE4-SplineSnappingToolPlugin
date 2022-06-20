@@ -282,7 +282,7 @@ bool FSplineSnappingToolEdMode::InputAxis(FEditorViewportClient* InViewportClien
 	{
 		if (USplineSnappingEditorSettings* SplineSnappingEditorSettings = USplineSnappingEditorSettings::Get())
 		{
-			float* AxisPtr = nullptr;
+			double* AxisPtr = nullptr;
 
 			if (SplineSnappingEditorSettings->MousewheelRotationAxis != EMousewheelRotationAxis::None && SplineSnappingEditorSettings->RotationSpeed > 0)
 			{
@@ -363,7 +363,7 @@ bool FSplineSnappingToolEdMode::IsSelectionAllowed(AActor* InActor, bool bInSele
 	return true;
 }
 
-EAxisList::Type FSplineSnappingToolEdMode::GetWidgetAxisToDraw(FWidget::EWidgetMode InWidgetMode) const
+EAxisList::Type FSplineSnappingToolEdMode::GetWidgetAxisToDraw(UE::Widget::EWidgetMode InWidgetMode) const
 {
 	if (bSnapEnabled)
 	{
@@ -687,7 +687,7 @@ void FSplineSnappingToolEdMode::OnClearSelection()
 
 bool FSplineSnappingToolEdMode::HasValidSpline()
 {
-	if (SelectedSplineComp != nullptr && SelectedSplineComp->IsPendingKillOrUnreachable())
+	if (IsValid(SelectedSplineComp) && SelectedSplineComp->IsUnreachable())
 	{
 		SelectedSplineComp = nullptr;
 	}

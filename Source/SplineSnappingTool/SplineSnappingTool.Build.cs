@@ -8,7 +8,7 @@ public class SplineSnappingTool : ModuleRules
 {
 	public SplineSnappingTool(ReadOnlyTargetRules Target) : base(Target)
 	{
-		/*PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;*/   PCHUsage = ModuleRules.PCHUsageMode.NoPCHs; bUseUnity = false;
+		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;   /*PCHUsage = ModuleRules.PCHUsageMode.NoPCHs; bUseUnity = false;*/
 
 		PrivateIncludePaths.AddRange(
 			new string[] {
@@ -41,6 +41,7 @@ public class SplineSnappingTool : ModuleRules
                 "PropertyEditor",
                 "ComponentVisualizers",
                  "EditorStyle",
+				 "EditorFramework",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

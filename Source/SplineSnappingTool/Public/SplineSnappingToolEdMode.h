@@ -32,7 +32,7 @@ public:
 	virtual bool MouseMove(FEditorViewportClient* ViewportClient, FViewport* Viewport, int32 x, int32 y) override;
 	virtual bool LostFocus(FEditorViewportClient* ViewportClient, FViewport* Viewport) override;
 	virtual bool IsSelectionAllowed(AActor* InActor, bool bInSelection) const override;
-	virtual EAxisList::Type GetWidgetAxisToDraw(FWidget::EWidgetMode InWidgetMode) const override;
+	virtual EAxisList::Type GetWidgetAxisToDraw(UE::Widget::EWidgetMode InWidgetMode) const override;
 	virtual bool GetCursor(EMouseCursor::Type& OutCursor) const override;
 	virtual void Tick(FEditorViewportClient* ViewportClient, float DeltaTime) override;
 	bool UsesToolkits() const override;
