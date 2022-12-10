@@ -24,7 +24,7 @@ TSharedPtr< FSlateStyleSet > FSplineSnappingToolStyle::StyleSet = NULL;
 TSharedPtr< class ISlateStyle > FSplineSnappingToolStyle::Get() { return StyleSet; }
 
 
-FName FSplineSnappingToolStyle::GetStyleSetName()
+FName FSplineSnappingToolStyle::GetAppStyleSetName()
 {
 	return StyleSet->GetStyleSetName();
 }

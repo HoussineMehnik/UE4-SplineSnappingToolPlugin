@@ -40,7 +40,7 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 					.AutoHeight()
 						[
 							SNew(SBorder)
-							.BorderImage(FEditorStyle::GetBrush("ToolPanel.DarkGroupBorder"))
+							.BorderImage(FAppStyle::GetBrush("ToolPanel.DarkGroupBorder"))
 								[
 									SNew(SVerticalBox)
 									+SVerticalBox::Slot()
@@ -48,12 +48,12 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 									.AutoHeight()
 										[
 											SNew(SBorder)
-											.BorderImage(FEditorStyle::GetBrush("ToolPanel.DarkGroupBorder"))
+											.BorderImage(FAppStyle::GetBrush("ToolPanel.DarkGroupBorder"))
 											.HAlign(HAlign_Fill)
 											.VAlign(VAlign_Fill)
 												[
 													SNew(SBorder)
-													.BorderImage(FEditorStyle::GetBrush("ToolPanel.DarkGroupBorder"))
+													.BorderImage(FAppStyle::GetBrush("ToolPanel.DarkGroupBorder"))
 													.HAlign(HAlign_Left)
 													.VAlign(VAlign_Center)
 														[
@@ -65,8 +65,8 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 															.AutoWidth()
 																[
 																	SNew(STextBlock)
-																	.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-																	.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.10" ) )
+																	.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+																	.Font( FAppStyle::Get().GetFontStyle( "FontAwesome.10" ) )
 																	//.Text( FEditorFontGlyphs::Arrow_Down)
 																]
 															+ SHorizontalBox::Slot()
@@ -75,7 +75,7 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 															.AutoWidth()
 																[
 																	SNew(STextBlock)
-																	.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+																	.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 																		.Text(LOCTEXT("SplineSnappingTool_Name", "Spline Snapping Tool"))
 																]
 														]
@@ -88,7 +88,7 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 												.AutoHeight()
 												[
 													SNew(SBorder)
-													.BorderImage(FEditorStyle::GetBrush("ToolPanel.GroupBorder"))
+													.BorderImage(FAppStyle::GetBrush("ToolPanel.GroupBorder"))
 													.HAlign(HAlign_Center)
 													.VAlign(VAlign_Fill)
 													.Padding(FMargin(2.f))
@@ -101,7 +101,7 @@ void SSplineSnappingToolWidget::Construct(const FArguments& InArgs, FSplineSnapp
 												.AutoHeight()
 												[
 													SNew(SBorder)
-													.BorderImage(FEditorStyle::GetBrush("ToolPanel.GroupBorder"))
+													.BorderImage(FAppStyle::GetBrush("ToolPanel.GroupBorder"))
 														[
 															DetailsPanel->AsShared()
 														]
@@ -172,7 +172,7 @@ TSharedPtr<SWidget> SSplineSnappingToolWidget::CreateSettingsBarWidget()
 					SNew(SBorder)
 					.HAlign(HAlign_Center)
 					.Padding(0)
-					.BorderImage(FEditorStyle::GetBrush("NoBorder"))
+					.BorderImage(FAppStyle::GetBrush("NoBorder"))
 					.IsEnabled(FSlateApplication::Get().GetNormalExecutionAttribute())
 					[
 						Toolbar.MakeWidget()
