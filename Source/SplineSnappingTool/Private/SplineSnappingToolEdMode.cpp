@@ -16,6 +16,7 @@
 #include "ComponentVisualizer.h"
 #include "SplineSnappingToolCommands.h"
 #include "Framework/Application/SlateApplication.h"
+#include "SceneView.h"
 
 
 #define LOCTEXT_NAMESPACE "SplineSnappingToolEdMode"
